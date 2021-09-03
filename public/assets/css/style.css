@@ -1,0 +1,101 @@
+
+/* meyerweb standard css reset, with adjustments (public domain)*/
+
+html, body,
+h1, img, u, ul, li,
+article, figure, figcaption, footer, header,
+nav, section{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+/* end of reset */
+
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+
+h1{
+  font: 25px/1.5 Arial, Helvetica,sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding:25px;
+  margin:0;
+  background-color:#f4f4f4;
+}
+
+h3{
+  font: 20px/1.5 Arial, Helvetica,sans-serif;
+  text-align: center;
+  padding: 5px;
+  margin:0;
+  background-color:#f4f4f4;
+}
+
+
+
+header{
+  background:#ffffff;
+  color:#303030;
+  position:static;
+  width: 100%;
+  height: 100%;
+  min-height: 100px;
+  max-height: 100px;
+  border-bottom:#303030 2px solid;
+}
+
+/* Header is fixed (for sticky purposes) but has the same min-max height to circumvent responsiveness issues. REsponsiveness addresses in @media query at bottom */
+
+
+header a{
+  color:#303030;
+  text-decoration:none;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+  margin-right: 50px;
+}
+
+/* Float and inline settings used in this fashion result in the seperation of the logo and the navbar */
+
+header .logo {
+    width: 200px;
+    margin-left: 30px;
+    padding-top: 30px;
+}
+
+/* Simple image was used as logo. Intended to be .png, but photoshop would not export to .png at time of creation. Header background already white so no issue. */
+
+
+header nav{
+  float:right;
+  margin-top:40px;
+}
+
+header .highlight, header .current a{
+  color:#303030;
+  font-weight:bold;
+  text-decoration: underline;
+}
+
+header a:hover{
+  color:#e0e0e0;
+}
+
+main{
+  margin-left:40px;
+}
+
